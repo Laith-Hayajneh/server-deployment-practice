@@ -3,8 +3,8 @@
 
 name: Node.js CI
 
-on:[push,pullrequest]
- 
+on: [push, pull_request]
+
 jobs:
   build:
 
@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
